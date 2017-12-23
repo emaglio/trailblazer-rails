@@ -3,7 +3,7 @@ PATH
   specs:
     trailblazer-rails (1.0.4)
       reform-rails (>= 0.1.4, < 0.2.0)
-      trailblazer (>= 2.0.0, < 2.1.0)
+      trailblazer (>= 2.0.0, < 2.2.0)
       trailblazer-loader (>= 0.1.0)
 
 GEM
@@ -77,7 +77,7 @@ GEM
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
-    json (1.8.3)
+    json (1.8.6)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.4)
@@ -192,4 +192,4 @@ DEPENDENCIES
   trailblazer-rails!
 
 BUNDLED WITH
-   1.14.4
+   1.15.4
