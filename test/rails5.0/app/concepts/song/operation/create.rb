@@ -1,5 +1,6 @@
 class Song::New < Trailblazer::Operation
   step Model( Song, :new )
+  step Policy::Pundit(Song::Policy, :create?)
   step Contract::Build( constant: Song::Contract )
 end
 

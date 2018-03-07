@@ -20,4 +20,6 @@ class SongsController < ApplicationController
 
     @class = result[:model].class
   end
+
+  def index;end
 end
