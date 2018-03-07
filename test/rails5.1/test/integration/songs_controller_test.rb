@@ -7,7 +7,8 @@ class SongsControllerTest < Trailblazer::Test::Integration
   end
 
   it "show" do
-    song = Song::Create.(params: { title: "Skin Trade" })[:model]
+    user = OpenStruct.new(name: 'user')
+    song = Song::Create.(params: { title: "Skin Trade" }, current_user: user)[:model]
 
     visit "/songs/#{song.id}"
     page.must_have_css "h1", visible: "Skin Trade"
